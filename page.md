@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /
 ---
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,22 +24,6 @@ int main(int argc, char** argv) {
 }
 ```
 
-<script>
-  const darkMode = document.querySelector('input[type="checkbox"]');
+![MyString constructor diagram showing the stack object and its heap character array]({{ '/assets/03-mystring-ctor-1.svg' | relative_url }})
 
-  if (darkMode) {
-    // Markdown task lists render disabled inputs; make this one interactive.
-    darkMode.disabled = false;
-    const item = darkMode.closest('li');
-    const label = document.createElement('label');
-    label.append(...item.childNodes);
-    item.append(label);
-
-    const updateTheme = () => {
-      document.documentElement.dataset.theme = darkMode.checked ? 'dark' : 'light';
-    };
-
-    darkMode.addEventListener('change', updateTheme);
-    updateTheme();
-  }
-</script>
+<script src="{{ '/dark-mode.js' | relative_url }}" defer></script>
