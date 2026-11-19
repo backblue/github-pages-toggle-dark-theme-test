@@ -10,9 +10,9 @@ permalink: /
 
 # Hello, world!
 
-Test&#x20;
-
 <p class="theme-toggle"><label><input id="dark-mode" type="checkbox"> Dark mode</label></p>
+
+Test&#x20;
 
 ---
 
