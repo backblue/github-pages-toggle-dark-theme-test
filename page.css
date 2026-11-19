@@ -1,46 +1,23 @@
 :root {
-  color-scheme: dark;
-  --background: #121212;
-  --foreground: #ffffff;
-  --code-background: #242424;
-  --code-keyword: #ff7b72;
-  --code-string: #a5d6ff;
-  --code-function: #d2a8ff;
-  --code-number: #79c0ff;
-  --code-comment: #a5adb8;
-  --border: #3d444d;
-  --link: #79c0ff;
+  color-scheme: light dark;
+  --background: light-dark(#ffffff, #121212);
+  --foreground: light-dark(#111111, #ffffff);
+  --code-background: light-dark(#f2f2f2, #242424);
+  --code-keyword: light-dark(#cf222e, #ff7b72);
+  --code-string: light-dark(#0a3069, #a5d6ff);
+  --code-function: light-dark(#6639ba, #d2a8ff);
+  --code-number: light-dark(#0550ae, #79c0ff);
+  --code-comment: light-dark(#57606a, #a5adb8);
+  --border: light-dark(#d1d9e0, #3d444d);
+  --link: light-dark(#0969da, #79c0ff);
 }
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --background: #ffffff;
-  --foreground: #111111;
-  --code-background: #f2f2f2;
-  --code-keyword: #cf222e;
-  --code-string: #0a3069;
-  --code-function: #6639ba;
-  --code-number: #0550ae;
-  --code-comment: #57606a;
-  --border: #d1d9e0;
-  --link: #0969da;
 }
 
-/* Follow the browser before JavaScript sets the theme, avoiding a dark flash. */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme]) {
-    color-scheme: light;
-    --background: #ffffff;
-    --foreground: #111111;
-    --code-background: #f2f2f2;
-    --code-keyword: #cf222e;
-    --code-string: #0a3069;
-    --code-function: #6639ba;
-    --code-number: #0550ae;
-    --code-comment: #57606a;
-    --border: #d1d9e0;
-    --link: #0969da;
-  }
+:root[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 html, body {

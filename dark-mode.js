@@ -28,12 +28,7 @@ if (darkMode) {
     applyTheme(darkMode.checked);
   });
 
-  if (browserTheme.addEventListener) {
-    browserTheme.addEventListener('change', syncSystemTheme);
-  } else {
-    // Older Safari versions expose the original MediaQueryList listener API.
-    browserTheme.addListener(syncSystemTheme);
-  }
+  browserTheme.addEventListener('change', syncSystemTheme);
 
   window.addEventListener('focus', syncSystemTheme);
   window.addEventListener('pageshow', syncSystemTheme);
