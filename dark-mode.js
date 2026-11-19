@@ -1,14 +1,6 @@
-const darkMode = document.querySelector('input[type="checkbox"]');
+const darkMode = document.querySelector('#dark-mode');
 
 if (darkMode) {
-  // Markdown task lists render disabled inputs; make this one interactive.
-  darkMode.disabled = false;
-  const item = darkMode.closest('li');
-  item.parentElement.classList.add('theme-toggle');
-  const label = document.createElement('label');
-  label.append(...item.childNodes);
-  item.append(label);
-
   const browserTheme = window.matchMedia('(prefers-color-scheme: dark)');
   let manualOverride = false;
 

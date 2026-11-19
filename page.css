@@ -106,8 +106,7 @@ code {
   font-size: 85%;
 }
 
-.task-list-item { list-style: none; }
-.theme-toggle { padding-left: 0; list-style: none; }
+.theme-toggle { padding: 0; margin-left: 0; }
 .theme-toggle label { display: inline-flex; align-items: center; gap: 0.5em; }
 .theme-toggle input[type="checkbox"] { margin: 0; }
 label, input[type="checkbox"] { cursor: pointer; }
@@ -146,7 +145,7 @@ pre code {
 .highlight .c, .highlight .c1, .highlight .cm,
 .highlight .cs { color: var(--code-comment); }
 
-img {
+img, .diagram svg {
   color-scheme: inherit;
   max-width: 100%;
   height: auto;
