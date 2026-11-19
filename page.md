@@ -12,9 +12,22 @@ permalink: /
 
 <p class="theme-toggle"><label><input id="dark-mode" type="checkbox"> Dark mode</label></p>
 
-Test&#x20;
+## Subtitle 2: Hello, world!
+- Yap 1
+- Yap 2
+- Yap 3
+  - Yap 4
+  - Yap 5
+- A link to [google!](https://google.com/)
 
----
+## Another subtitle!
+Code and SVG Example below.
+
+## Source
+- [__***This is markdown, click here!***__](https://github.com/backblue/github-pages-toggle-dark-theme-test)
+
+
+## Examples
 
 ```c
 #include <stdio.h>

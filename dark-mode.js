@@ -8,7 +8,6 @@ if (darkMode) {
   const applyTheme = (isDark, followSystem = false) => {
     darkMode.checked = isDark;
     if (followSystem) {
-      // Let CSS track the system directly, even before a JS change event arrives.
       delete document.documentElement.dataset.theme;
     } else {
       document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
@@ -17,7 +16,6 @@ if (darkMode) {
 
   const syncSystemTheme = () => {
     const isDark = browserTheme.matches;
-    // A new system preference takes over from the previous checkbox choice.
     if (isDark !== lastSystemTheme) {
       manualOverride = false;
       lastSystemTheme = isDark;
