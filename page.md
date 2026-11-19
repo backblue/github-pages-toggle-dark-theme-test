@@ -8,7 +8,7 @@ permalink: /
 
 <link rel="stylesheet" href="{{ '/page.css' | relative_url }}">
 
-# Hello, world!
+# [Hello, world!](https://backblue.github.io/github-pages-toggle-dark-theme-test/)
 
 <p class="theme-toggle"><label><input id="dark-mode" type="checkbox"> Dark mode</label></p>
 
