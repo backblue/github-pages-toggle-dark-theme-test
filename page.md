@@ -14,7 +14,7 @@ Test&#x20;
 
 - [x] Dark mode
 
-\----------
+---
 
 ```c
 #include <stdio.h>

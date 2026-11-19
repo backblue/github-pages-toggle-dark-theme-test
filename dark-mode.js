@@ -4,6 +4,7 @@ if (darkMode) {
   // Markdown task lists render disabled inputs; make this one interactive.
   darkMode.disabled = false;
   const item = darkMode.closest('li');
+  item.parentElement.classList.add('theme-toggle');
   const label = document.createElement('label');
   label.append(...item.childNodes);
   item.append(label);
